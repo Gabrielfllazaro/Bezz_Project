@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".SplashActivity"
+    android:background="#FFE0CD">
+
+    <ImageView
+        android:id="@+id/logoLogin"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:id="@+id/fontLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:gravity="center_horizontal"
+        android:text="BeezBeez"
+        android:textSize="40dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/yellow"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Insira seu Email: "
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_email"
+        android:id="@+id/emailLogin"
+        android:layout_marginBottom="10dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Insira sua senha: "
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_lock"
+        android:id="@+id/passwordlLogin"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esqueceu sua senha? clique aqui!"
+        android:layout_marginBottom="20dp"
+        android:gravity="end"
+        android:id="@+id/forgotPassword"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:id="@+id/entrarLogin"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/yellow2"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:id="@+id/cadastrarLogin"
+        android:backgroundTint="@color/yellow"
+        android:textSize="20dp"/>
+</LinearLayout>
+
