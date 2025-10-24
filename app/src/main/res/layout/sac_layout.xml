@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SacActivity"
+    android:background="@color/yellowfundo">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/back"
+        android:text="Voltar"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/yellow"
+        />
+
+
+    <TextView
+        android:id="@+id/fontLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:gravity="center_horizontal"
+        android:text="BeezBeez"
+        android:textSize="60dp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        />
+    <ImageView
+        android:id="@+id/logoLogin"
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fale" />
+
+    <TextView
+        android:id="@+id/fontFale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:gravity="center_horizontal"
+        android:text="Fale com nosco"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/fontNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:gravity="center_horizontal"
+        android:text="11 97249-5814"
+        android:textSize="50dp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+</LinearLayout>
