@@ -6,20 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MenuActivity">
+    tools:context=".MenuActivity"
+    android:background="@color/yellowfundo">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content">
-<com.google.android.material.appbar.MaterialToolbar
-    android:layout_width="match_parent"
-    app:menu="@menu/menu_drawer"
-    android:layout_height="?actionBarSize"
-    app:title="Produtos"
-    app:navigationIcon="@drawable/baseline_arrow_back"
 
-    />
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:menu="@menu/menu_drawer"
+            app:navigationIcon="@drawable/baseline_arrow_back"
+            app:title="Produtos"
+            android:background="#5B3723"
+            app:titleTextColor="@color/white"
+
+            />
 
     </com.google.android.material.appbar.AppBarLayout>
 
